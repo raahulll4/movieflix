@@ -180,6 +180,13 @@ function MovieDetail() {
       })
       .then(() => {
         setIsLoaded(true);
+        window.adobeDataLayer.push({
+          "movie" : {
+            "id" : backendMovie.id,
+            "title" : backendMovie.title
+          }
+        })
+        
       });
   }, [movie]);
   if (error) {
@@ -199,6 +206,7 @@ function MovieDetail() {
       </div>
     );
   } else
+  
     return (
       <div className="container py-4">
         <div className="row d-flex justify-content-around">
