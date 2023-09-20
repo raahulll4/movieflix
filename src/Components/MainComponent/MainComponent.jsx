@@ -14,9 +14,9 @@ import TopRatedMovies from "../TopRatedMovies/TopRatedMovies";
 import WatchList from "../WatchList/WatchList";
 
 export const GenreContext = React.createContext();
-
 function MainComponent(props) {
   const [genres, setGenres] = useState(null);
+ 
   return (
     <>
       <Routes location={props.location}>

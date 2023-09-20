@@ -5,28 +5,17 @@ import MainComponent from "./Components/MainComponent/MainComponent";
 import { UserProvider } from "./Shared/js/user-context";
 
 function App() {
-  // window.adobeDataLayer = window.adobeDataLayer || [];
-  // window.adobeDataLayer.push({
-  //   "userInfo" : {
-  //     "id" : null,
-  //     "email" : null,
-  //     "firstName" : null,
-  //     "lastName" : null
-  //   },
-  // });
-  let script = document.createElement("script");
-  script.setAttribute("src", "adobe-client-data-layer.js")
-  script.async = true;
-  script.defer = true;
-  document.head.appendChild(script)
   return (
-    <BrowserRouter>
-      <div className="App">
-        <UserProvider>
-          <MainComponent />
-        </UserProvider>
-      </div>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <div className="App">
+          <UserProvider>
+            <MainComponent />
+          </UserProvider>
+        </div>
+      </BrowserRouter>
+    </>
+
   );
 }
 
