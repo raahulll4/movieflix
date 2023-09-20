@@ -182,8 +182,8 @@ function MovieDetail() {
         setIsLoaded(true);
         window.adobeDataLayer.push({
           "movie" : {
-            "id" : movieId,
-            "title" : backendMovie.title
+            "id" : "somethingID",
+            "title" : "somethingTITLE"
           }
         })
         
