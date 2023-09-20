@@ -15,7 +15,7 @@ function App() {
   //   },
   // });
   let script = document.createElement("script");
-  script.setAttribute("src", "adobe-client-data-layer.min.js")
+  script.setAttribute("src", "adobe-client-data-layer.js")
   script.async = true;
   script.defer = true;
   document.head.appendChild(script)
