@@ -180,13 +180,6 @@ function MovieDetail() {
       })
       .then(() => {
         setIsLoaded(true);
-        window.adobeDataLayer.push({
-          "movie" : {
-            "id" : "somethingID",
-            "title" : "somethingTITLE"
-          }
-        })
-        
       });
   }, [movie]);
   if (error) {
